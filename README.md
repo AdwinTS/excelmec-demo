@@ -54,7 +54,7 @@ A modern, futuristic website for ExcelMEC 2025 technical symposium featuring stu
 
 1. **Clone the repository**
    \`\`\`bash
-   git clone https://github.com/AdwinTS/excelmec-2025.git
+   git clone https://github.com/AdwinTS/excelmec-demo.git
    cd excelmec-2025
    \`\`\`
 
