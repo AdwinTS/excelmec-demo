@@ -26,7 +26,7 @@ const config: Config = {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "#ec4899",
+          DEFAULT: "#ec4899", // pink-500
           foreground: "#000000",
         },
         secondary: {
@@ -75,28 +75,29 @@ const config: Config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
-        "shooting-star": {
-          "0%": { transform: "translateX(0) translateY(0)", opacity: "0" },
-          "10%": { opacity: "1" },
-          "90%": { opacity: "1" },
-          "100%": { transform: "translateX(-100vw) translateY(-20px)", opacity: "0" },
+        "globe-rotate": {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
+        },
+        orbit: {
+          "0%": { transform: "rotate(0deg) translateX(100px) rotate(0deg)" },
+          "100%": { transform: "rotate(360deg) translateX(100px) rotate(-360deg)" },
+        },
+        float: {
+          "0%, 100%": { transform: "translateY(0px)" },
+          "50%": { transform: "translateY(-10px)" },
         },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "shooting-star-1": "shooting-star 3s linear infinite",
-        "shooting-star-2": "shooting-star 4s linear infinite 0.5s",
-        "shooting-star-3": "shooting-star 2.5s linear infinite 1s",
-        "shooting-star-4": "shooting-star 3.5s linear infinite 1.5s",
-        "shooting-star-5": "shooting-star 2.8s linear infinite 2s",
-        "shooting-star-6": "shooting-star 4.2s linear infinite 2.5s",
-        "shooting-star-7": "shooting-star 3.2s linear infinite 3s",
-        "shooting-star-8": "shooting-star 2.7s linear infinite 3.5s",
+        "globe-rotate": "globe-rotate 30s linear infinite",
+        orbit: "orbit 20s linear infinite",
+        float: "float 3s ease-in-out infinite",
       },
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
+} satisfies Config
 
 export default config

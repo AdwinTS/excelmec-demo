@@ -8,38 +8,38 @@ export default function HomePage() {
     <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-pink-900">
       {/* Background Effects with Shooting Stars */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
-        {/* Static Stars */}
-        <div className="absolute top-10 left-10 w-2 h-2 bg-pink-400 rounded-full animate-pulse"></div>
-        <div className="absolute top-32 right-20 w-1 h-1 bg-pink-300 rounded-full animate-pulse delay-1000"></div>
-        <div className="absolute bottom-20 left-1/4 w-1.5 h-1.5 bg-pink-500 rounded-full animate-pulse delay-500"></div>
-        <div className="absolute top-1/2 right-10 w-1 h-1 bg-pink-400 rounded-full animate-pulse delay-700"></div>
-        <div className="absolute bottom-32 right-1/3 w-2 h-2 bg-pink-300 rounded-full animate-pulse delay-300"></div>
-        <div className="absolute top-1/4 left-1/3 w-1 h-1 bg-pink-200 rounded-full animate-pulse delay-200"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-1.5 h-1.5 bg-pink-400 rounded-full animate-pulse delay-800"></div>
+        {/* Static Stars with CSS classes */}
+        <div className="absolute top-10 left-10 w-2 h-2 bg-pink-400 rounded-full star-pulse"></div>
+        <div className="absolute top-32 right-20 w-1 h-1 bg-pink-300 rounded-full star-pulse-delay-1"></div>
+        <div className="absolute bottom-20 left-1/4 w-1.5 h-1.5 bg-pink-500 rounded-full star-pulse-delay-2"></div>
+        <div className="absolute top-1/2 right-10 w-1 h-1 bg-pink-400 rounded-full star-pulse-delay-3"></div>
+        <div className="absolute bottom-32 right-1/3 w-2 h-2 bg-pink-300 rounded-full star-pulse"></div>
+        <div className="absolute top-1/4 left-1/3 w-1 h-1 bg-pink-200 rounded-full star-pulse-delay-1"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-1.5 h-1.5 bg-pink-400 rounded-full star-pulse-delay-2"></div>
 
-        {/* Shooting Stars */}
-        <div className="absolute top-16 -right-20 w-1 h-1 bg-pink-400 rounded-full animate-shooting-star-1">
+        {/* Shooting Stars with Direct CSS Classes */}
+        <div className="absolute top-16 -right-20 w-1 h-1 bg-pink-400 rounded-full shooting-star-1">
           <div className="absolute top-0 left-0 w-20 h-px bg-gradient-to-l from-pink-400 to-transparent"></div>
         </div>
-        <div className="absolute top-32 -right-20 w-1.5 h-1.5 bg-pink-300 rounded-full animate-shooting-star-2">
+        <div className="absolute top-32 -right-20 w-1.5 h-1.5 bg-pink-300 rounded-full shooting-star-2">
           <div className="absolute top-0.5 left-0 w-16 h-px bg-gradient-to-l from-pink-300 to-transparent"></div>
         </div>
-        <div className="absolute top-48 -right-20 w-1 h-1 bg-pink-500 rounded-full animate-shooting-star-3">
+        <div className="absolute top-48 -right-20 w-1 h-1 bg-pink-500 rounded-full shooting-star-3">
           <div className="absolute top-0 left-0 w-24 h-px bg-gradient-to-l from-pink-500 to-transparent"></div>
         </div>
-        <div className="absolute top-64 -right-20 w-0.5 h-0.5 bg-pink-200 rounded-full animate-shooting-star-4">
+        <div className="absolute top-64 -right-20 w-0.5 h-0.5 bg-pink-200 rounded-full shooting-star-4">
           <div className="absolute top-0 left-0 w-12 h-px bg-gradient-to-l from-pink-200 to-transparent"></div>
         </div>
-        <div className="absolute top-80 -right-20 w-1.5 h-1.5 bg-pink-400 rounded-full animate-shooting-star-5">
+        <div className="absolute top-80 -right-20 w-1.5 h-1.5 bg-pink-400 rounded-full shooting-star-5">
           <div className="absolute top-0.5 left-0 w-18 h-px bg-gradient-to-l from-pink-400 to-transparent"></div>
         </div>
-        <div className="absolute top-96 -right-20 w-1 h-1 bg-pink-300 rounded-full animate-shooting-star-6">
+        <div className="absolute top-96 -right-20 w-1 h-1 bg-pink-300 rounded-full shooting-star-6">
           <div className="absolute top-0 left-0 w-20 h-px bg-gradient-to-l from-pink-300 to-transparent"></div>
         </div>
-        <div className="absolute bottom-32 -right-20 w-1 h-1 bg-pink-500 rounded-full animate-shooting-star-7">
+        <div className="absolute bottom-32 -right-20 w-1 h-1 bg-pink-500 rounded-full shooting-star-7">
           <div className="absolute top-0 left-0 w-16 h-px bg-gradient-to-l from-pink-500 to-transparent"></div>
         </div>
-        <div className="absolute bottom-48 -right-20 w-0.5 h-0.5 bg-pink-400 rounded-full animate-shooting-star-8">
+        <div className="absolute bottom-48 -right-20 w-0.5 h-0.5 bg-pink-400 rounded-full shooting-star-8">
           <div className="absolute top-0 left-0 w-14 h-px bg-gradient-to-l from-pink-400 to-transparent"></div>
         </div>
       </div>

@@ -112,6 +112,85 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
+/* ===== SHOOTING STARS ANIMATIONS ===== */
+@keyframes shooting-star {
+  0% {
+    transform: translateX(0) translateY(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-100vw) translateY(-20px);
+    opacity: 0;
+  }
+}
+
+.shooting-star-1 {
+  animation: shooting-star 3s linear infinite;
+}
+
+.shooting-star-2 {
+  animation: shooting-star 4s linear infinite 0.5s;
+}
+
+.shooting-star-3 {
+  animation: shooting-star 2.5s linear infinite 1s;
+}
+
+.shooting-star-4 {
+  animation: shooting-star 3.5s linear infinite 1.5s;
+}
+
+.shooting-star-5 {
+  animation: shooting-star 2.8s linear infinite 2s;
+}
+
+.shooting-star-6 {
+  animation: shooting-star 4.2s linear infinite 2.5s;
+}
+
+.shooting-star-7 {
+  animation: shooting-star 3.2s linear infinite 3s;
+}
+
+.shooting-star-8 {
+  animation: shooting-star 2.7s linear infinite 3.5s;
+}
+
+/* ===== STAR PULSE ANIMATIONS ===== */
+@keyframes star-pulse {
+  0%,
+  100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+.star-pulse {
+  animation: star-pulse 2s ease-in-out infinite;
+}
+
+.star-pulse-delay-1 {
+  animation: star-pulse 2s ease-in-out infinite 0.5s;
+}
+
+.star-pulse-delay-2 {
+  animation: star-pulse 2s ease-in-out infinite 1s;
+}
+
+.star-pulse-delay-3 {
+  animation: star-pulse 2s ease-in-out infinite 1.5s;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
